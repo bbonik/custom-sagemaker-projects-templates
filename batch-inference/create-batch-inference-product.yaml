@@ -17,7 +17,7 @@ Parameters:
 
   ProductDescriptionParameter:
     Type: String
-    Default: 'The purpose of this template is to deploy a scheduled batch inference using SageMaker Batch Transform and SageMaker Pipelines, given a ModelGroupPackageName from the Amazon SageMaker Model Registry.'
+    Default: 'The purpose of this template is to build a model using SageMaker Pipelines, register the mode in Model Registry, and deploy a scheduled batch inference using SageMaker Batch Transform and SageMaker Pipelines.'
     Description: The description of this product within the portfolio.
 
   ProductOwnerParameter:
