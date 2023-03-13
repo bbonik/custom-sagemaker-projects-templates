@@ -12,7 +12,7 @@ Parameters:
 
   ProductNameParameter:
     Type: String
-    Default: Batch Interface Endpoint SageMaker Project Example
+    Default: Build-Train-Deploy with Batch Interface Custom SageMaker Projects Template
     Description: The name of this product within the portfolio.
 
   ProductDescriptionParameter:
