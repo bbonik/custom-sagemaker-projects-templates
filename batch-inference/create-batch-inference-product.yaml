@@ -390,7 +390,8 @@ Resources:
         AWSDEFAULT___CODE_STAGING_BUCKET___ : !Ref BootstrapS3Bucket
         AWSDEFAULT___PROJECT_NAME___ : !Ref SageMakerProjectsProjectNameParameter
       Archives:
-        - ['batch-inference-seedcode.zip', '/seedcode']
+        - ['batch-inference-build.zip', '/seedcode/build']
+        - ['batch-inference-deploy.zip', '/seedcode/deploy']
 
 
 Outputs:

@@ -62,8 +62,8 @@ Resources:
       RepositoryDescription: !Sub SageMaker Model building workflow infrastructure as code for the Project ${SageMakerProjectName}
       Code:
         S3:
-          Bucket: sagemaker-servicecatalog-seedcode-ap-southeast-1
-          Key: toolchain/model-building-workflow-v1.0.zip
+          Bucket: AWSDEFAULT___CODE_STAGING_BUCKET___  # DIFFERENT compared to built-in templates
+          Key: AWSDEFAULT___PROJECT_NAME___/batch-inference-build.zip # DIFFERENT compared to built-in templates
         BranchName: main
 
   SageMakerModelPipelineBuildProject:
@@ -210,7 +210,7 @@ Resources:
       Code:
         S3:
           Bucket: AWSDEFAULT___CODE_STAGING_BUCKET___  # DIFFERENT compared to built-in templates
-          Key: AWSDEFAULT___PROJECT_NAME___/seedcode/batch-inference-seedcode.zip # DIFFERENT compared to built-in templates
+          Key: AWSDEFAULT___PROJECT_NAME___/batch-inference-deploy.zip # DIFFERENT compared to built-in templates
         BranchName: main
 
   ModelDeployBuildProject:
