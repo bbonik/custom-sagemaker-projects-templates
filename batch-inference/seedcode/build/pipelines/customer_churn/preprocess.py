@@ -82,3 +82,7 @@ if __name__ == "__main__":
     pd.DataFrame(test_data).to_csv(
         f"{base_dir}/test/test.csv", header=False, index=False
     )
+    
+    pd.DataFrame(test_data.iloc[:,1:]).to_csv(  # drop first column (target column)
+        f"{base_dir}/test/test-for-inference.csv", header=False, index=False
+    )
