@@ -85,15 +85,15 @@ def get_pipeline(
     #### PARAMETERS
     model_name = ParameterString("ModelName", default_value='${ModelName}')
     batch_inference_instance_count = ParameterInteger("BatchInstanceCount", default_value=1)
-    batch_inference_instance_type = ParameterString("BatchInstanceType", default_value='ml.m5.xlarge')
+    batch_inference_instance_type = ParameterString("BatchInstanceType", default_value='ml.m5.large')
     input_path = ParameterString("InputPath", default_value=f"s3://sagemaker-servicecatalog-seedcode-{region}/dataset/abalone-dataset.csv")
     output_path = ParameterString("OutputPath")
 
     #### SAGEMAKER CONSTRUCTS
     transform = Transformer(
         model_name=model_name,
-        instance_count=1,
-        instance_type='ml.m5.xlarge',
+        instance_count=batch_inference_instance_count,
+        instance_type=batch_inference_instance_type,
         output_path=output_path,
         base_transform_job_name=f"{base_job_prefix}/batch-transform-job",
         max_payload=10,
