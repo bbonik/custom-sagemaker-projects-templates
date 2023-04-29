@@ -1,6 +1,6 @@
-# Custom MLOps SageMaker Porjects template for "Build-Train-Deploy with Batch Inference"
+# Custom MLOps SageMaker Projects template for "Build-Train-Deploy with Batch Inference"
 
-This repository contains an example custom MLOps SageMaker Projects template, for model building, training, and deployment (with batch inferene).
+This repository contains an example **custom MLOps** SageMaker Projects template, for **model building, training, and deployment (with batch inference)**.
 
 The template is a combination of the [built-in Build-Train-Deploy SageMaker Studio template](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects-templates-sm.html#sagemaker-projects-templates-code-commit), and the [Batch Inference custom template from this example repo](https://github.com/aws-samples/sagemaker-custom-project-templates/tree/main/batch-inference). The seed code has also been changed, from the Abalone dataset (regression), used in the built-in templates, to a Customer Churn scenario (binary classification). The generic instructions on how to install the custom template are shown below.
 
